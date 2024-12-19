@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Links</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        .button img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+        }
+
+        .button-gpt {
+            background-color: #4a90e2;
+        }
+
+        .button-gpt:hover {
+            background-color: #357abd;
+        }
+
+        .button-linkedin {
+            background-color: #0077b5;
+        }
+
+        .button-linkedin:hover {
+            background-color: #005582;
+        }
+
+        .button-instagram {
+            background-color: #e4405f;
+        }
+
+        .button-instagram:hover {
+            background-color: #c13584;
+        }
+
+        .button-twitter {
+            background-color: #1da1f2;
+        }
+
+        .button-twitter:hover {
+            background-color: #0a95dd;
+        }
+
+        .button-youtube {
+            background-color: #ff0000;
+        }
+
+        .button-youtube:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Follow Us</h1>
+        <div>
+            <a href="https://chat.openai.com/" target="_blank" class="button button-gpt">
+                <img src="https://via.placeholder.com/32?text=GPT" alt="ChatGPT">
+                <span>Visit ChatGPT</span>
+            </a>
+
+            <a href="https://www.linkedin.com" target="_blank" class="button button-linkedin">
+                <img src="https://via.placeholder.com/32?text=LI" alt="LinkedIn">
+                <span>Visit LinkedIn</span>
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank" class="button button-instagram">
+                <img src="https://via.placeholder.com/32?text=IG" alt="Instagram">
+                <span>Visit Instagram</span>
+            </a>
+
+            <a href="https://twitter.com" target="_blank" class="button button-twitter">
+                <img src="https://via.placeholder.com/32?text=TW" alt="Twitter">
+                <span>Visit Twitter</span>
+            </a>
+
+            <a href="https://www.youtube.com" target="_blank" class="button button-youtube">
+                <img src="https://via.placeholder.com/32?text=YT" alt="YouTube">
+                <span>Visit YouTube</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('click', () => {
+                console.log(`Navigating to ${button.href}`);
+            });
+        });
+    </script>
+</body>
+</html>
